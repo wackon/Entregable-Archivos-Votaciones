@@ -1,0 +1,5 @@
+Jorge,1234,0
+Ana,456,1
+Daniel,789,1
+Jose,987,0
+Juan,654,1

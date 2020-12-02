@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CANDIDATOSDataSet1" targetNamespace="http://tempuri.org/CANDIDATOSDataSet1.xsd" xmlns:mstns="http://tempuri.org/CANDIDATOSDataSet1.xsd" xmlns="http://tempuri.org/CANDIDATOSDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CANDIDATOSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CANDIDATOSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Votaciones.Properties.Settings.GlobalReference.Default.CANDIDATOSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Candidato-VotosTableAdapter" GeneratorDataComponentClassName="Candidato_VotosTableAdapter" Name="Candidato-Votos" UserDataComponentName="Candidato-VotosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CANDIDATOSConnectionString (Settings)" DbObjectName="CANDIDATOS.dbo.[Candidato-Votos]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NOMBRE, CANTIDADVOTOS FROM dbo.[Candidato-Votos]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NOMBRE" DataSetColumn="NOMBRE" />
+              <Mapping SourceColumn="CANTIDADVOTOS" DataSetColumn="CANTIDADVOTOS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CANDIDATOSDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CANDIDATOSDataSet1" msprop:Generator_UserDSName="CANDIDATOSDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Candidato-Votos" msprop:Generator_TableClassName="_Candidato_VotosDataTable" msprop:Generator_TableVarName="_tableCandidato_Votos" msprop:Generator_TablePropName="_Candidato_Votos" msprop:Generator_RowDeletingName="_Candidato_VotosRowDeleting" msprop:Generator_RowChangingName="_Candidato_VotosRowChanging" msprop:Generator_RowEvHandlerName="_Candidato_VotosRowChangeEventHandler" msprop:Generator_RowDeletedName="_Candidato_VotosRowDeleted" msprop:Generator_UserTableName="Candidato-Votos" msprop:Generator_RowChangedName="_Candidato_VotosRowChanged" msprop:Generator_RowEvArgName="_Candidato_VotosRowChangeEvent" msprop:Generator_RowClassName="_Candidato_VotosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOMBRE" msprop:Generator_ColumnVarNameInTable="columnNOMBRE" msprop:Generator_ColumnPropNameInRow="NOMBRE" msprop:Generator_ColumnPropNameInTable="NOMBREColumn" msprop:Generator_UserColumnName="NOMBRE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CANTIDADVOTOS" msprop:Generator_ColumnVarNameInTable="columnCANTIDADVOTOS" msprop:Generator_ColumnPropNameInRow="CANTIDADVOTOS" msprop:Generator_ColumnPropNameInTable="CANTIDADVOTOSColumn" msprop:Generator_UserColumnName="CANTIDADVOTOS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
